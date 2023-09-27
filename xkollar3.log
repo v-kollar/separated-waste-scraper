@@ -1,0 +1,87 @@
+2023-04-20 20:11:15+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.11.2+maria~ubu2204 started.
+2023-04-20 20:11:15+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+2023-04-20 20:11:15+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.11.2+maria~ubu2204 started.
+2023-04-20 20:11:15+00:00 [Note] [Entrypoint]: Initializing database files
+
+
+PLEASE REMEMBER TO SET A PASSWORD FOR THE MariaDB root USER !
+To do so, start the server, then issue the following command:
+
+'/usr/bin/mariadb-secure-installation'
+
+which will also give you the option of removing the test
+databases and anonymous user created by default.  This is
+strongly recommended for production servers.
+
+See the MariaDB Knowledgebase at https://mariadb.com/kb
+
+Please report any problems at https://mariadb.org/jira
+
+The latest information about MariaDB is available at https://mariadb.org/.
+
+Consider joining MariaDB's strong and vibrant community:
+https://mariadb.org/get-involved/
+
+2023-04-20 20:11:16+00:00 [Note] [Entrypoint]: Database files initialized
+2023-04-20 20:11:16+00:00 [Note] [Entrypoint]: Starting temporary server
+2023-04-20 20:11:16+00:00 [Note] [Entrypoint]: Waiting for server startup
+2023-04-20 20:11:16 0 [Note] Starting MariaDB 10.11.2-MariaDB-1:10.11.2+maria~ubu2204 source revision cafba8761af55ae16cc69c9b53a341340a845b36 as process 103
+2023-04-20 20:11:16 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-04-20 20:11:16 0 [Note] InnoDB: Number of transaction pools: 1
+2023-04-20 20:11:16 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-04-20 20:11:16 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-04-20 20:11:16 0 [Note] InnoDB: Using liburing
+2023-04-20 20:11:16 0 [Note] InnoDB: Initializing buffer pool, total size = 64.000MiB, chunk size = 1.000MiB
+2023-04-20 20:11:16 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-04-20 20:11:16 0 [Note] InnoDB: File system buffers for log disabled (block size=512 bytes)
+2023-04-20 20:11:16 0 [Note] InnoDB: 128 rollback segments are active.
+2023-04-20 20:11:16 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2023-04-20 20:11:16 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2023-04-20 20:11:16 0 [Note] InnoDB: log sequence number 45452; transaction id 14
+2023-04-20 20:11:16 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-04-20 20:11:16 0 [Warning] 'user' entry 'root@f7fdf1d77157' ignored in --skip-name-resolve mode.
+2023-04-20 20:11:16 0 [Warning] 'proxies_priv' entry '@% root@f7fdf1d77157' ignored in --skip-name-resolve mode.
+2023-04-20 20:11:16 0 [Note] mysqld: ready for connections.
+Version: '10.11.2-MariaDB-1:10.11.2+maria~ubu2204'  socket: '/run/mysqld/mysqld.sock'  port: 0  mariadb.org binary distribution
+2023-04-20 20:11:17+00:00 [Note] [Entrypoint]: Temporary server started.
+2023-04-20 20:11:19+00:00 [Note] [Entrypoint]: Securing system users (equivalent to running mysql_secure_installation)
+
+2023-04-20 20:11:19+00:00 [Note] [Entrypoint]: /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init.sql
+
+
+2023-04-20 20:11:19+00:00 [Note] [Entrypoint]: Stopping temporary server
+2023-04-20 20:11:19 0 [Note] mysqld (initiated by: unknown): Normal shutdown
+2023-04-20 20:11:19 0 [Note] InnoDB: FTS optimize thread exiting.
+2023-04-20 20:11:19 0 [Note] InnoDB: Starting shutdown...
+2023-04-20 20:11:19 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+2023-04-20 20:11:19 0 [Note] InnoDB: Buffer pool(s) dump completed at 230420 20:11:19
+2023-04-20 20:11:19 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2023-04-20 20:11:19 0 [Note] InnoDB: Shutdown completed; log sequence number 151396; transaction id 23
+2023-04-20 20:11:19 0 [Note] mysqld: Shutdown complete
+
+2023-04-20 20:11:19+00:00 [Note] [Entrypoint]: Temporary server stopped
+
+2023-04-20 20:11:19+00:00 [Note] [Entrypoint]: MariaDB init process done. Ready for start up.
+
+2023-04-20 20:11:19 0 [Note] Starting MariaDB 10.11.2-MariaDB-1:10.11.2+maria~ubu2204 source revision cafba8761af55ae16cc69c9b53a341340a845b36 as process 1
+2023-04-20 20:11:19 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-04-20 20:11:19 0 [Note] InnoDB: Number of transaction pools: 1
+2023-04-20 20:11:19 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2023-04-20 20:11:19 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+2023-04-20 20:11:19 0 [Note] InnoDB: Using liburing
+2023-04-20 20:11:19 0 [Note] InnoDB: Initializing buffer pool, total size = 64.000MiB, chunk size = 1.000MiB
+2023-04-20 20:11:19 0 [Note] InnoDB: Completed initialization of buffer pool
+2023-04-20 20:11:19 0 [Note] InnoDB: File system buffers for log disabled (block size=512 bytes)
+2023-04-20 20:11:19 0 [Note] InnoDB: 128 rollback segments are active.
+2023-04-20 20:11:19 0 [Note] InnoDB: Setting file './ibtmp1' size to 12.000MiB. Physically writing the file full; Please wait ...
+2023-04-20 20:11:19 0 [Note] InnoDB: File './ibtmp1' size is now 12.000MiB.
+2023-04-20 20:11:19 0 [Note] InnoDB: log sequence number 151396; transaction id 24
+2023-04-20 20:11:19 0 [Note] Plugin 'FEEDBACK' is disabled.
+2023-04-20 20:11:19 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+2023-04-20 20:11:19 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+2023-04-20 20:11:19 0 [Note] InnoDB: Buffer pool(s) load completed at 230420 20:11:19
+2023-04-20 20:11:19 0 [Note] Server socket created on IP: '0.0.0.0'.
+2023-04-20 20:11:19 0 [Note] Server socket created on IP: '::'.
+2023-04-20 20:11:19 0 [Note] mysqld: ready for connections.
+Version: '10.11.2-MariaDB-1:10.11.2+maria~ubu2204'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+2023-04-20 20:16:42 2023-04-20 20:16:42 0 [Warning] Aborted connection 0 to db: 'unconnected' user: 'unauthenticated' host: 'connecting host' (Too many connections)
